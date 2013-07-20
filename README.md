@@ -15,6 +15,18 @@ xquery version "1.0";
 import module namespace mxfl='http://www.vaitkus.com/xquery/functions' at '/lib/mxfl.xquery';
 
 
+Functions
+----------------------------
+
+mxfl:generate-uuid-v4()
+----------------------------
+This is a generic implementation of generating UUID in XQuery. It only relies on xdmp:* functions of MarkLogic to create this according to UUID v4 format: 
+xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx where x is any hexadecimal digit and y is one of 8, 9, a, or b.
+
+mxfl:remove-files-incrementally()
+----------------------------
+This removes files incrementally from a selected collection. //TODO: work-in-progress
+
 Issues?
 ----------------------------
 Any issues please log it on github.com, [blog](http://www.vaitkus.com),
